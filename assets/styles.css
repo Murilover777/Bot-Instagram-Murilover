@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #ad0715 0%, #000000 100%);
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.explanation {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.copy-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+.success-message {
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+    display: none;
+}

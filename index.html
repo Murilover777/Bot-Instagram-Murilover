@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Instagram Murilover</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" href="assets/imagens/Assinatura ABR.png" />
+</head>
+<body>
+
+    <div class="container">
+        <img src="assets/imagens/Assinatura ABR.png" alt="Sua Logo" class="logo">
+        <div class="explanation">
+            Para colocar um código no console na página do Instagram, siga estes passos:
+            <br><br>
+            1. Copie o link e cole no seu navegador.<br>
+            <br>
+            2. Apos abrir o link copie o código do link. <br>
+            <br>
+            3. Abra o Instagram no navegador.<br>
+            <br>
+            4. Pressione F12 ou clique com o botão direito e selecione "Inspecionar".<br>
+            <br>
+            5. Vá até a aba "Console".<br>
+            <br>
+            6. Cole o código e pressione Enter.<br><br>
+            Clique no botão abaixo para copiar o link do código.
+        </div>
+        <button class="copy-button" onclick="copyLink()">Copiar Link</button>
+        <a href="https://www.instagram.com/"><button class="copy-button">Link para Instagram</button> </a>
+        <div class="success-message" id="successMessage">Link copiado com sucesso!</div>
+    </div>
+
+    <script>
+
+        function copyLink() {
+            const link = "https://drive.google.com/file/d/1KkDQrQ_TaUFeBcoNHJaqSb9chPDJiNmO/view?usp=drive_link";
+            navigator.clipboard.writeText(link).then(() => {
+                const successMessage = document.getElementById('successMessage');
+                successMessage.style.display = 'block';
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 3000);
+            });
+        }
+    </script>
+
+</body>
+</html>
